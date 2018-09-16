@@ -24,6 +24,7 @@ class App extends Component {
     document.getElementsByClassName("learnmore")[1].addEventListener("click", this.detailtwoHandler);
     document.getElementsByClassName("learnmore")[2].addEventListener("click", this.detailthreeHandler);
     document.getElementsByClassName("learnmore")[3].addEventListener("click", this.detailfourHandler);
+    document.getElementsByClassName("learnmore")[4].addEventListener("click", this.detailfiveHandler);
     }
   
 
@@ -54,6 +55,12 @@ class App extends Component {
     this.setState({ detailNumber: "4"})
     this.backdropHandler();
   }
+
+  detailfiveHandler = () => {
+    this.setState({ detailNumber: "5"});
+    this.backdropHandler();
+  }
+
   drawerHandler = () => {
     this.setState({detailOpen: true, drawerOpen: true})
   }
