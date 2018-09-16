@@ -1,0 +1,140 @@
+#home {
+    height: 110vh;
+    background: linear-gradient(0deg,rgba(249, 247, 247, 0.7), rgba(249, 247, 247, 0.7)), url('./Burano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    
+    font-family: 'Oswald', sans-serif;
+}
+.home {
+    height: 100%;
+    display: grid;
+}
+.hometitle h1 {
+    color: #112d4e;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.hometitle p {
+    color: #112d4e;
+    font-size: 1.8rem;
+}
+
+
+.hometitle {
+    padding-top: 35vh;
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+.out h1 {
+    color: #112d4e;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.out p {
+    color: #112d4e;
+    font-size: 1.8rem;
+}
+.out {
+    padding-top: 32.5vh;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.clickabout {
+    margin-top: 10vh;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+.clickabout i {
+    font-size: 3rem;
+    color: #d8364c;
+}
+
+.clickabout p {
+    font-size: 1rem;
+}
+
+.clickclear {
+    margin-top: 10vh;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.clickclear i {
+    font-size: 3rem;
+    color: #d8364c;
+}
+
+.clickclear p {
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 768px){
+    .clickabout {
+        margin-top: 7vh;
+    }
+    .clickclear {
+        margin-top: 7vh;
+    }
+    
+}
+
+@media (max-width: 420px){
+    .hometitle h1 {
+        font-size: 4rem;
+    }
+    .hometitle p {
+        font-size: 1.3rem;
+    }
+    .hometitle {
+        padding-top: 40vh;
+    }
+    .out h1 {
+        font-size: 4rem;
+    }
+    .out p {
+        font-size: 1.3rem;
+    }
+    .out {
+        padding-top: 38vh;
+    }
+    .clickabout {
+        margin-top: 10vh;
+    }
+    .clickabout i {
+        font-size: 2rem;
+    }
+    .clickabout p {
+        font-size: .9rem;
+    }
+    .clickclear {
+        margin-top: 8vh;
+    }
+    .clickclear i {
+        font-size: 2rem;
+    }
+    .clickclear p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 320px) {
+        .hometitle {
+            padding-top: 35vh;
+        }
+        .out h1 {
+            font-size: 4rem;
+        }
+        .out p {
+            font-size: 1.3rem;
+        }
+        .out {
+            padding-top: 33vh;
+    }
+}

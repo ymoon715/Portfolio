@@ -1,0 +1,125 @@
+.detail {
+    height: auto;
+    background: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 100px;
+    left: 30%;
+    width: 40%;
+    z-index: 101;
+    display: grid;
+    opacity: 0;
+    transform: scale(0,0);
+    transition: all 0.1s ease-in;
+    padding-bottom: 20px;
+}
+.detailtext a {
+    cursor: pointer;
+}
+.detail.open {
+    opacity: 1;
+    transform: scale(1,1);
+
+}
+
+.detailimg {
+    width: 100%;
+}
+
+.detailimg img {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.detailtext {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 250px;
+}
+
+.detailtext h1 {
+    padding-top:30px;
+}
+
+.detailtext h3 {
+    color: gray;
+}
+.detailtext hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    flex: 1;
+}
+.detailbuttons {
+    margin-top: 15px;
+    height: auto;
+    display: flex;
+}
+
+.detailsite {
+    background: #d8364c;
+    border: 2px solid #d8364c;
+    color: white;
+    width: 100px;
+    margin-left: 20px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.detailsite:hover {
+    background: white;
+    color: #d8364c;
+    transition: .5s ease;
+}
+
+.x {
+    width: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media (max-width: 1110px) {
+    .detail {
+        width: 70%;
+        left: 20%;
+    }
+}
+@media (max-width: 768px){
+    .detail {
+        width: 95%;
+        left: 10px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .detail {
+        width: 95%;
+        height: auto;
+    }
+    .detailbuttons {
+        padding-top: 20px;
+    }
+    .detailtext h1 {
+        padding-top:20px;
+        font-size: 1.6rem;
+    }
+    .detailtext p {
+        font-size: .8rem;
+    }
+    .detailtext hr {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .detail {
+        width: 100%;
+        left: 0;
+        top: 10px;
+    }
+}

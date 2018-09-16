@@ -1,0 +1,133 @@
+.contact {
+    height: auto;
+    background: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+.cont-clear {
+    opacity: 0;
+}
+
+.contact-header {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    opacity: 1;
+    animation: contanimate 0.8s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+}
+
+
+.contact-underline {
+    height: 5px;
+    background: #d8364c;
+    width: 80px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: contanimate 0.8s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+    animation-delay: 0.4s;
+}
+.contact-clear {
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+
+
+.contact-container {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    opacity: 0;
+}
+
+.contact-container-appear {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    opacity: 0;
+    animation: slidein 0.8s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+}
+
+.contact-icon {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #d8364c;
+    cursor: pointer;
+    color: #d8364c;
+    transition: 0.3s all;
+}
+
+.contact-icon i {
+    margin-top: 18px;
+    font-size: 4rem;
+}
+
+.contact-icon:hover {
+    background: #d8364c;
+    color: white;
+    transition: 0.3s all;
+}
+
+@keyframes contanimate {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1000px){
+    .contact-container {
+        display: flex;
+        width: 768px;
+    }
+    .contact-container-appear {
+        display: flex;
+        width: 768px;
+    }
+}
+@media (max-width: 768px){
+    .contact-container {
+        padding-top: 75px;
+        display: block;
+        width: 200px;
+        padding-bottom: 0px;
+    }
+    .contact-container-appear {
+        
+        padding-top: 75px;
+        display: block;
+        width: 200px;
+        padding-bottom: 0px;
+    }
+    .contact-icon {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 420px){
+    .contact {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .contact-header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px){
+    .contact-header {
+        font-size: 1.8rem;
+    }
+}
