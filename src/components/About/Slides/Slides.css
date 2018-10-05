@@ -1,258 +1,262 @@
 #web-about {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 .web-about-container {
-    display: flex;
-    width: 1000px;
-    margin: 0 auto;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .aboutimg img {
-    width: 400px;
+  width: 250px;
+  border-radius: 50%;
 }
 
 .aboutimg {
-    opacity: 0;
+  opacity: 0;
 }
 
 .aboutimg.left {
-    animation: imganimate 0.7s ease 1 normal forwards; 
+  animation: imganimate 0.7s ease 1 normal forwards;
 }
 
 .about-info {
-    display: block;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 75px;
-    position: relative;
-    margin-left: 25px;
+  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 75px;
+  position: relative;
+  margin-left: 25px;
 }
 
 .about-intro h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .about-intro p {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 1rem;
-    font-weight: 300;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .name {
-    opacity: 0;
+  opacity: 0;
 }
 
 .name.first {
-    animation: nameanimate 0.7s ease 1 normal forwards;
+  animation: nameanimate 0.7s ease 1 normal forwards;
 }
 
 .name.second {
-    animation: nameanimate 0.7s ease 1 normal forwards;
-    animation-delay: 0.3s;
+  animation: nameanimate 0.7s ease 1 normal forwards;
+  animation-delay: 0.3s;
 }
 
 .about-slide {
-    height: 25vh;
+  height: 25vh;
 }
-
 
 .about-slide p {
-    padding-top: 25px;
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 25px;
-    color: transparent;
-    animation: reveal 1s cubic-bezier(0, 0.2, 0.2, 1) 1 normal forwards;
+  padding-top: 25px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 25px;
+  color: transparent;
+  animation: reveal 1s cubic-bezier(0, 0.2, 0.2, 1) 1 normal forwards;
 }
 
-#prev,#next {
-    position: absolute;
-    top: 35%;
-    font-size: 4rem;
-    color: gray;
-    cursor: pointer;
+#prev,
+#next {
+  position: absolute;
+  top: 35%;
+  font-size: 4rem;
+  color: gray;
+  cursor: pointer;
 }
-#prev:hover ,#next:hover {
-    color: black;
+#prev:hover,
+#next:hover {
+  color: black;
 }
 #prev {
-    left: 0;
+  left: 0;
 }
 
 #next {
-    right: 0;
+  right: 0;
 }
 
 @keyframes underfadeone {
-    0% {
-        width: 140px;
-    }
-    100% {
-        width: 80px;
-        background: #d8364c;
-    }
+  0% {
+    width: 140px;
+  }
+  100% {
+    width: 80px;
+    background: #d8364c;
+  }
 }
 
 @keyframes underfadetwo {
-    0% {
-        width: 80px;
-    }
-    100% {
-        width: 115px;
-        background: #3f72af;
-    }
+  0% {
+    width: 80px;
+  }
+  100% {
+    width: 115px;
+    background: #3f72af;
+  }
 }
 
 @keyframes underfadethree {
-    0% {
-        width: 115px;
-    }
-    100% {
-        width: 140px;
-        background: #00b8a9;
-    }
+  0% {
+    width: 115px;
+  }
+  100% {
+    width: 140px;
+    background: #00b8a9;
+  }
 }
 @keyframes reveal {
-    0% {
-        opacity: 0;
-        transform: translateY(20%)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-        color: black;
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: black;
+  }
 }
 
 @keyframes nameanimate {
-    0% {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes imganimate {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .aboutunderline {
-    height: 5px;
-    background: #d8364c;
-    margin: 0 auto;
-    animation: underfadeone 0.5s ease 1 normal forwards;
+  height: 5px;
+  background: #d8364c;
+  margin: 0 auto;
+  animation: underfadeone 0.5s ease 1 normal forwards;
 }
 .aboutunderline.two {
-    height: 5px;
-    width: 100px;
-    background: #d8364c;
-    margin: 0 auto;
-    animation: underfadetwo 0.5s ease-out 1 normal forwards;
+  height: 5px;
+  width: 100px;
+  background: #d8364c;
+  margin: 0 auto;
+  animation: underfadetwo 0.5s ease-out 1 normal forwards;
 }
 .aboutunderline.three {
-    height: 5px;
-    width: 150px;
-    background: #3f72af;
-    margin: 0 auto;
-    animation: underfadethree 0.5s ease-out 1 normal forwards;
+  height: 5px;
+  width: 150px;
+  background: #3f72af;
+  margin: 0 auto;
+  animation: underfadethree 0.5s ease-out 1 normal forwards;
 }
 
 @media (max-width: 1000px) {
-    .web-about-container {
-        display: block;
-        width: 740px;
-    }
-    .aboutimg img {
-        width: 375px;
-        border-radius: 50%;
-    }
-    .about-info {
-        margin-left: 0px;
-    }
+  .web-about-container {
+    display: block;
+    width: 740px;
+  }
+  .aboutimg img {
+    width: 250px;
+    border-radius: 50%;
+  }
+  .about-info {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 740px) {
-    .web-about-container {
-        display: block;
-        width: 390px;
-    }
+  .web-about-container {
+    display: block;
+    width: 390px;
+  }
 
-    .aboutimg img {
-        width: 240px;
-        border-radius: 50%;
-    }
+  .aboutimg img {
+    width: 200px;
+    border-radius: 50%;
+  }
 
-    .about-info {
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 50px;
-    }
-    .about-intro {
-        width: 300px;
-        margin: 0 auto;
-    }
-    
-    .about-intro h2 {
-        font-size: 2rem;
-    }
-    
-    .about-intro p {
-        font-size: 0.8rem;
-    }
-    
-    .about-slide p {
-        padding-top: 25px;
-        font-size: 0.9rem;
-        line-height: 25px;
-    }
+  .about-info {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 50px;
+  }
+  .about-intro {
+    width: 300px;
+    margin: 0 auto;
+  }
 
-    #prev,#next {
-        font-size: 3rem;
-        top: 20%;
-    }
+  .about-intro h2 {
+    font-size: 2rem;
+  }
+
+  .about-intro p {
+    font-size: 0.8rem;
+  }
+
+  .about-slide p {
+    padding-top: 25px;
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+
+  #prev,
+  #next {
+    font-size: 3rem;
+    top: 20%;
+  }
 }
 
-@media (max-width: 375px){
-    .web-about-container {
-        display: block;
-        width: 320px;
-    }
+@media (max-width: 375px) {
+  .web-about-container {
+    display: block;
+    width: 320px;
+  }
 
-    .aboutimg img {
-        width: 200px;
-        border-radius: 50%;
-    }
-    
-    .about-intro h2 {
-        font-size: 1.8rem;
-    }
-    
-    .about-slide {
-        height: 32vh;
-    }
+  .aboutimg img {
+    width: 175px;
+    border-radius: 50%;
+  }
 
-    .about-intro p {
-        font-size: 0.7rem;
-    }
-    
-    .about-slide p {
-        padding-top: 25px;
-        font-size: 0.8rem;
-        line-height: 25px;
-    }
+  .about-intro h2 {
+    font-size: 1.5rem;
+  }
 
-    #prev,#next {
-        font-size: 2.5rem;
-    }
+  .about-slide {
+    height: 32vh;
+  }
+
+  .about-intro p {
+    font-size: 0.7rem;
+  }
+
+  .about-slide p {
+    padding-top: 25px;
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+
+  #prev,
+  #next {
+    font-size: 2.5rem;
+  }
 }
